@@ -1,0 +1,458 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h5 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 18px; 
+  transition: transform 0.3s ease;
+}
+
+h5:hover {
+  transform: scale(1.1);
+  color: #fff; 
+}
+
+/* footer */
+
+
+.footer{
+	background: #0d1117;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+  color:#fff!important;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left{
+	width: 40%;
+}
+
+
+.footer h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer h3 span{
+	color:  teal;
+}
+
+/* Footer links */
+
+.footer .footer-links{
+	
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-name{
+  color: teal;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer .footer-center p a{
+	color:  teal;
+	text-decoration: none;;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent; /* Light background color */
+  border-top: 1px solid #ddd; /* Top border */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1; /* Equal flex-grow for responsive layout */
+  margin: 10px;
+  min-width: 250px; /* Minimum width for small screens */
+}
+
+.footer-left img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007bff; /* Link color */
+}
+
+.footer-socials a {
+  margin-right: 10px;
+  color: #333; /* Social icons color */
+  font-size: 24px; /* Icon size */
+}
+
+.footer-about {
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Dot container code  */
+
+/* Fullscreen canvas */
+ /* Existing CSS */
+ 
+.dot-canvas-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 20px;
+}
+
+
+.navbar {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 10; 
+}
+
+/* Left and Right Side Styles */
+.left-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-image {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.right-side {
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+
+.right-side h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.right-side p {
+  font-size: 1.5rem;
+}
+
+
+/* swiper code */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 300px;
+  margin-left: 40px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* sun circle code */
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slowSpin 8s linear infinite; /* Adjust the duration to 8 seconds */
+}
+/* HomePage.css */
+
+
+[data-scroll-container] {
+  position: relative;
+  z-index: 1; /* Ensure scroll container is above the background */
+}
+
+
+
+.dot-canvas-container2 {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  overflow: hidden; 
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  padding: 0; /* Remove padding for full-screen layout */
+}
+
+.footer-left, .footer-center, .footer-right {
+  margin: 0; /* Remove margin for full-screen sections */
+  padding: 20px; /* Add padding for inner content */
+  width: 100%; /* Full width of the screen */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+/* For small screens (Mobile: max-width 640px) */
+@media (max-width: 640px) {
+  .footer-left, .footer-center, .footer-right {
+    height: auto; /* Let the height adjust naturally based on content */
+    display: block; /* Stack the sections vertically */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .footer-left {
+    background-color: transparent; /* Yellow background */
+  }
+
+  .footer-center {
+    background-color: transparent; /* Blue background */
+  }
+
+  .footer-right {
+    background-color: transparent; /* Red background */
+  }
+
+  /* Optional: Ensure readable font sizes for small screens */
+  .footer-left h3, .footer-center h1, .footer-right h1 {
+    font-size: 1.2rem; /* Adjust font size for readability */
+  }
+
+  .footer-left p, .footer-center p, .footer-right p {
+    font-size: 1rem; /* Ensure text is readable */
+  }
+}
+
+/* For medium screens (Tablets: max-width 1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    display: block; /* Stack sections vertically */
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    width: 100%; /* Ensure the divs are full-width on tablets */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+}
+
+/* For large screens (Desktops: min-width 1025px) */
+@media (min-width: 1025px) {
+  .footer {
+    display: flex;
+    flex-direction: row; /* Display sections in a row */
+    justify-content: space-between; /* Ensure space between divs */
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    width: 30%; /* Set each section to take 30% of the width */
+    margin-bottom: 0; /* Remove margin for large screens */
+    height: auto; /* Height adjusts based on content */
+  }
+
+  /* Optional: Adjust text for readability */
+  .footer-left h3, .footer-center h1, .footer-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-left p, .footer-center p, .footer-right p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* About us page */
+
+.custom-shape {
+  border-radius: 50% 50% 40% 60%; 
+}
+
+
+/* moon code */
+
+body {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  background-color: white; /* Light mode background */
+  color: black; /* Light mode text color */
+}
+
+body.dark-mode {
+  background-color: black; /* Dark mode background */
+  color: white; /* Dark mode text color */
+}
+
+.darkmode-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px; /* Size of the button icon */
+}
+
+.darkmode-button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  backdrop-filter: blur(5px); /* Adds blur effect */
+  border-radius: 50%; /* Keeps the rounded shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  padding: 8px; /* Optional padding */
+  overflow: hidden;
+}
+
