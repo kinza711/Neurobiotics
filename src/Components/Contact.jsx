@@ -1,110 +1,97 @@
 
 import React from "react";
-import { IoMdPin } from "react-icons/io";
-import { MdAddIcCall, MdAccessTimeFilled, MdMarkEmailUnread } from "react-icons/md";
+import {
+  IoLocationSharp,
+  IoCallSharp,
+  IoMail,
+  IoPerson,
+} from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className="bg-red-400 w-screen h-screen flex items-center justify-center">
-      <div className="bg-[#F8F8F8] text-center p-8 w-full h-screen flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-[#1F213E]">
-          Contact With Our Team
-        </h1>
-
-        {/* Centering the main content */}
-        <div className="main mt-12 w-full md:w-[170vh] h-[60vh] flex flex-col md:flex-row items-center justify-between">
-          {/* Left Section: Contact Form */}
-          <div className="left bg-[#F0F0F0] w-full md:w-1/2 p-4 shadow-lg">
-            <h1 className="text-2xl mt-4 font-semibold text-[#1F213E]">
-              Get in Touch with Us
-            </h1>
-            <div className="mt-4">
-              <div className="flex space-x-2 mb-4">
-                <input
-                  type="text"
-                  placeholder="First name"
-                  className="flex-1 p-2 rounded border border-gray-300"
-                />
-                <input
-                  type="text"
-                  placeholder="Last name"
-                  className="flex-1 p-2 rounded border border-gray-300"
-                />
-              </div>
-
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full p-2 mb-4 rounded border border-gray-300"
-              />
-
-              <textarea
-                placeholder="Write your message here"
-                className="w-full p-2 rounded border border-gray-300 h-32"
-              />
-              <button className="rounded-3xl mt-4 bg-black p-3 hover:bg-[#0a2d2f] hover:scale-105 text-white">
-                Send Message
-              </button>
-            </div>
-          </div>
-
-          {/* Right Section: Contact Details */}
-          <div className="right w-1/2 ml-5 hidden md:block">
-            <h1 className="text-start text-2xl font-semibold text-[#082325]">
-              Contact Details
-            </h1>
-            <p className="text-start mt-4">
-              Our hours are <strong>Monday to Friday from 9:00 AM to 6:00 PM</strong> and{" "}
-              <strong>Saturday from 10:00 AM to 2:00 PM</strong>. Connect with us on{" "}
-              <strong>LinkedIn</strong>, <strong>Twitter</strong>, <strong>Facebook</strong>, and <strong>Instagram</strong>.
-              We look forward to hearing from you!
+    <>
+      <div id='contact' className="bg-[#F8F9FF] w-full min-h-screen flex items-center justify-center p-4">
+        <div className="pink bg-[#F8F9FF] w-full max-w-6xl flex flex-col md:flex-row items-center justify-center">
+          <div className="left w-full md:w-1/2 bg-transparent h-full text-center md:text-left">
+            <h1 className="text-4xl text-[#442AC7] mt-10 md:mt-32">Contact Us </h1>
+            <h1 className="text-4xl text-[#9853FF]">Let's Start the Conversation!</h1>
+            <p className="text-2xl text-gray-600 mt-2">
+              Your next big step starts here. We're <br className="hidden md:block" /> just a click away!
             </p>
 
-            <div className="details mt-10 grid grid-cols-2 gap-8">
-              <div className="detail-item flex bg-gray-100 p-4 shadow">
-                <div className="icon bg-black rounded-full text-white flex items-center justify-center h-12 w-12">
-                  <IoMdPin size={30} />
+            <div className="icons my-5 bg-transparent w-full md:w-1/2 h-auto md:h-40 flex flex-col items-center md:items-start justify-start relative">
+              <div className="bk1 flex gap-5 p-2 items-center">
+                <div className="circle h-8 w-8 bg-[#442AC7] text-white rounded-full flex items-center justify-center">
+                  <IoLocationSharp size="20" />
                 </div>
-                <div className="info ml-4">
-                  <h1 className="text-xl font-semibold">Address</h1>
-                  <p className="text-[#082325]">Lahore, Punjab, Pakistan</p>
-                </div>
+                <h1 className="text-black text-[18px]">Rahim Yar Khan</h1>
               </div>
 
-              <div className="detail-item flex bg-gray-100 p-4 shadow">
-                <div className="icon bg-black text-white flex items-center justify-center h-12 w-12 rounded-full">
-                  <MdAddIcCall size={30} />
+              <div className="bk2 flex gap-5 p-2 items-center">
+                <div className="circle h-8 w-8 bg-[#442AC7] text-white rounded-full flex items-center justify-center">
+                  <IoCallSharp size="20" className="rotate-[265deg]" />
                 </div>
-                <div className="info ml-4">
-                  <h1 className="text-xl font-semibold">Mobile</h1>
-                  <p className="text-gray-700">+923000337348</p>
-                </div>
+                <h1 className="text-black text-[18px]">+923258429083</h1>
               </div>
 
-              <div className="detail-item flex bg-gray-100 p-4 shadow">
-                <div className="icon bg-black text-white flex items-center justify-center h-12 w-12 rounded-full">
-                  <MdAccessTimeFilled size={30} />
+              <div className="bk2 flex gap-5 p-2 items-center">
+                <div className="circle h-8 w-8 bg-[#442AC7] text-white rounded-full flex items-center justify-center">
+                  <IoMail size="20" />
                 </div>
-                <div className="info ml-4">
-                  <h1 className="text-xl font-semibold">Availability</h1>
-                  <p className="text-gray-700">Monday To Friday</p>
-                </div>
+                <h1 className="text-black text-[18px]">infotechxicon360@gmail.com</h1>
+              </div>
+            </div>
+          </div>
+          <div className="right w-full md:w-1/2 bg-transparent h-full flex items-start justify-start">
+            <div className="form bg-[#9853FF] py-2 h-[90%] w-[95%] md:w-[75%] m-5 mt-10 rounded-3xl flex flex-col items-center justify-center relative">
+              <div className="relative bg-transparent mt-10 w-[80%]">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full pl-10 pr-4 py-4 text-white bg-[#B687FF] placeholder:text-white rounded-xl focus:outline-none"
+                />
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <IoPerson size={20} />
+                </span>
               </div>
 
-              <div className="detail-item flex bg-gray-100 p-4 shadow">
-                <div className="icon bg-black text-white flex items-center justify-center h-12 w-12 rounded-full">
-                  <MdMarkEmailUnread size={30} />
-                </div>
-                <div className="info ml-4">
-                  <h1 className="text-xl font-semibold">Email</h1>
-                  <p className="text-[#082325]">info@neurobiotics.com</p>
-                </div>
+              <div className="relative w-[80%] mt-2">
+                <input
+                  type="mail"
+                  placeholder="Email"
+                  className="w-full pl-10 pr-4 py-4 text-white bg-[#B687FF] placeholder:text-white rounded-xl focus:outline-none"
+                />
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <IoMail size={20} />
+                </span>
               </div>
+
+              <div className="relative w-[80%] mt-2">
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full pl-10 pr-4 py-4 text-white bg-[#B687FF] placeholder:text-white rounded-xl focus:outline-none"
+                />
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <IoCallSharp size={20} />
+                </span>
+              </div>
+
+              <div className="relative w-[80%] mt-4">
+                <textarea
+                  placeholder="Message"
+                  className="w-full h-[20vh] text-start pl-4 pr-4 py-4 text-white bg-[#B687FF] placeholder-white rounded-xl focus:outline-none resize-none"
+                />
+              </div>
+              <div className="relative   w-[80%]">
+              <button className="bg-white mb-2 text-[#22165e] px-5 p-1 rounded-md mt-1  font-semibold">Submit</button>
+              </div>
+              {/* <button className="bg-white mb-2 text-[#22165e] px-5 py-1 rounded-lg mt-4  font-semibold">Submit</button> */}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

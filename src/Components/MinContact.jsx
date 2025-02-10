@@ -33,7 +33,7 @@ const MinContact = () => {
           <div
             className="w-full md:w-1/2 md:h-full -mt-12 bg-cover bg-center hidden md:block"
             style={{
-              backgroundImage: `url('https://i.pinimg.com/736x/52/70/16/527016e4e3dfdd806da99161e91f1d50.jpg')`,
+              backgroundImage: `url('/conimg.jpg')`,
               borderTopLeftRadius: "1px",
               borderTopRightRadius: "1px",
               borderBottomRightRadius: "1px",

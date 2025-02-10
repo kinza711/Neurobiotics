@@ -1,151 +1,107 @@
 
+
 import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="chose h-screen w-full bg-[#FFFFFF]">
-      <h1 className="text-[#082325] mt-10 mb-10 text-4xl font-bold text-center">
-        Why Choose Us
-      </h1>
+    <>
+      <div className="bg-[#FFFFFF] items-center justify-center flex   w-full h-[65vh]">
+        <div className="pink h-full w-[80%] max-auto bg-transparent items-start justify-start relative">
+          <h1 className="mt-20 text-3xl font-semibold text-[#6139DA] ">
+            Reason to Choose Us{" "}
+          </h1>
+          <p className="text-gray-700 text-[22px] leading-7">
+            Your success is our mission, and we deliver it with expertise, care
+            and <br />
+            commitments!
+          </p>
 
-      {/* Full Layout for Large Screens */}
-      <div className="contant w-full bg-[#FFFFFF] hidden lg:flex items-center justify-center">
-        {/* Left Section */}
-        <div className="left w-4/12 bg-transparent mt-5 mr-10 flex flex-col justify-center">
-          <div className="side bg-white relative mb-8">
-            <h1 className="text-right font-semibold text-[#1F213E] text-2xl">
-              Experience
-            </h1>
-            <p className="text-right">
-              Our seasoned team brings years of industry <br /> expertise,
-              delivering innovative solutions tailored <br /> to your unique
-              challenges.
-            </p>
-          </div>
-          <div className="side bg-white relative mb-8">
-            <h1 className="text-right font-semibold text-[#1F213E] text-2xl">
-              Products
-            </h1>
-            <p className="text-right">
-              We utilize cutting-edge technology to create <br /> scalable,
-              user-centric products that align <br /> with your business
-              objectives.
-            </p>
-          </div>
-          <div className="side bg-white relative">
-            <h1 className="text-right font-semibold text-[#1F213E] text-2xl">
-              Customization
-            </h1>
-            <p className="text-right">
-              Our personalized approach ensures that each <br /> solution is
-              meticulously crafted <br /> to meet your specific needs.
-            </p>
-          </div>
-        </div>
+          <div className="cards  items-center jussify-center  relative overflow-hidden bg-transparent h-1/2 my-5  w-full ">
+            <div className="bg-transparent  gap-10 w-full h-auto items-center justify-center flex">
+            <div className="card1 ml-1  h-[14vh] w-4/12 bg-[#F8F8F7] border-2 border-[#6139DA]  rounded-xl flex items-center justify-center">
+              <div className="lft bg-transparent h-full w-[20%] items-center justify-center flex">
+                {/* <div className="img h-12 w-12 bg-[#9853FF] rounded-full "> */}
+                <img
+                  src="client-icon.png"
+                  alt="icon"
+                  className="h-full w-full object-cover "
+                />
+                {/* </div> */}
+              </div>
+              <div className="right bg-transparent h-full w-[80%]">
+                <h1 className="text-[20px] text-gray-800 mt-5 font-semibold">Client Centric Approach</h1>
+                <h4 className="text-[14px] text-gray-800 mt-1">We focus on our clents needs and work closely with them every step of the journey.</h4>
+              </div>
+            </div>
 
-        {/* Middle Image Section */}
-        <div className="middle w-4/12 flex items-center justify-center">
-          <img
-            src="https://zrtechsolutions.com/demo/html/technoit/assets/images/features.jpg"
-            alt=""
-            className="w-50"
-          />
-        </div>
+            <div className="card2 h-[14vh] w-4/12 bg-[#F8F8F7] border-2 border-[#6139DA]  rounded-xl flex items-center justify-center">
+              <div className="lft bg-transparent h-full w-[20%]">
+              <img
+                  src="call-icon.png"
+                  alt="icon"
+                  className="h-full w-full object-cover "
+                />
+              </div>
+              <div className="right bg-transparent h-full w-[80%]">
+              <h1 className="text-[20px] text-gray-800 mt-5 font-semibold">Ongoing Support</h1>
+              <h4 className="text-[14px] text-gray-800 mt-1">We continue to help you even after the project is done, ensuring you keep succeeding.</h4>
+              </div>
+            </div>
 
-        {/* Right Section */}
-        <div className="right w-4/12 bg-transparent ml-10 flex flex-col justify-center">
-          <div className="side bg-white relative mb-8">
-            <h1 className="text-left font-semibold text-[#1F213E] text-2xl">
-              Pricing
-            </h1>
-            <p className="text-left">
-              We offer competitive pricing models <br /> designed to provide
-              exceptional value <br /> without compromising on quality.
-            </p>
-          </div>
-          <div className="side bg-white relative mb-8">
-            <h1 className="text-left font-semibold text-[#1F213E] text-2xl">
-              Delivery
-            </h1>
-            <p className="text-left">
-              Committed to timely execution, we ensure <br /> that your projects
-              are delivered on schedule, <br /> enabling you to achieve your
-              goals efficiently.
-            </p>
-          </div>
-          <div className="side bg-white relative">
-            <h1 className="text-left font-semibold text-[#1F213E] text-2xl">
-              Support
-            </h1>
-            <p className="text-left">
-              Our dedicated support team is available to <br /> assist you at
-              every step, ensuring a seamless <br /> experience from start to
-              finish.
-            </p>
+            <div className="card3 h-[14vh] w-4/12 bg-[#F8F8F7] mr-[2.25px]  border-2 border-[#6139DA]  rounded-xl flex items-center justify-center">
+              <div className="lft bg-transparent h-full w-[20%]">
+              <img
+                  src="service-icon.png"
+                  alt="icon"
+                  className="h-full w-full object-cover "
+                />
+              </div>
+              <div className="right bg-transparent h-full w-[80%]">
+              <h1 className="text-[20px] text-gray-800 mt-5 font-semibold">Complete Sercices</h1>
+              <h4 className="text-[14px] text-gray-800 mt-1">we handle everything from the initial idea to the final product. Your IDEA+OUR SERVIES=Success.</h4>
+              </div>
+            </div>
+
+            </div>
+            <div className="bg-tranparent gap-10 m-3 w-full h-auto mt-8 items-center justify-center flex">
+            
+
+            <div className="card2 h-[14vh] w-4/12 overflow-hidden bg-[#F8F8F7] border-2 border-[#6139DA]  rounded-xl flex items-center justify-center">
+              <div className="lft bg-transparent  h-full w-[20%]">
+              <img
+                  src="solution-icon.png"
+                  alt="icon"
+                  className="h-full w-full object-cover "
+                />
+              </div>
+              <div className="right bg-transparent h-full w-[80%]">
+              <h1 className="text-[20px] text-gray-800 mt-5 font-semibold">Custom Solutions</h1>
+              <h4 className="text-[14px] text-gray-800 mt-1">We know every business is differeny, so we create solutions that are spacific just for you.</h4>
+              </div>
+            </div>
+
+            <div className="card3  flex-shrink-0 h-[14vh] w-4/12 overflow-hidden bg-[#F8F8F7] border-2 border-[#6139DA]  rounded-xl flex items-center justify-center">
+              <div className="lft bg-transparent h-full w-[20%]">
+              <img
+                  src="success-icon.png"
+                  alt="icon"
+                  className="h-full w-full object-cover "
+                />
+              </div>
+              <div className="right bg-trabsparent h-full w-[80%]">
+              <h1 className="text-[20px] text-gray-800 mt-5 font-semibold">100% Success</h1>
+              <h4 className="text-[14px] text-gray-800 mt-1">Our past project showcase our approach towords success.</h4>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Text-Only Layout for Small Screens */}
-      <div className="contant w-full bg-[#FFFFFF] flex flex-col space-y-6 lg:hidden px-6">
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Experience
-          </h1>
-          <p className="text-left text-sm">
-            Our seasoned team brings years of industry expertise, delivering
-            innovative solutions tailored to your unique challenges.
-          </p>
-        </div>
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Products
-          </h1>
-          <p className="text-left text-sm">
-            We utilize cutting-edge technology to create scalable, user-centric
-            products that align with your business objectives.
-          </p>
-        </div>
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Customization
-          </h1>
-          <p className="text-left text-sm">
-            Our personalized approach ensures that each solution is
-            meticulously crafted to meet your specific needs.
-          </p>
-        </div>
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Pricing
-          </h1>
-          <p className="text-left text-sm">
-            We offer competitive pricing models designed to provide exceptional
-            value without compromising on quality.
-          </p>
-        </div>
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Delivery
-          </h1>
-          <p className="text-left text-sm">
-            Committed to timely execution, we ensure that your projects are
-            delivered on schedule, enabling you to achieve your goals
-            efficiently.
-          </p>
-        </div>
-        <div className="side bg-white relative p-4 rounded shadow">
-          <h1 className="text-left font-semibold text-[#1F213E] text-xl">
-            Support
-          </h1>
-          <p className="text-left text-sm">
-            Our dedicated support team is available to assist you at every step,
-            ensuring a seamless experience from start to finish.
-          </p>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
 export default WhyChooseUs;
+
+
+
